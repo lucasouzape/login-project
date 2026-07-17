@@ -1,0 +1,47 @@
+/* Media Queries */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: linear-gradient(#49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 80vw; /* Um pouco menor que 90vw para não colar nas bordas */
+        height: 500px; /* Troque o 'auto' por uma altura fixa para não achatar */
+    }
+    
+    section#login > div#imagem {
+        float: left;
+        width: 40%; /* Ajuste a proporção se quiser */
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 60%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        background-image: linear-gradient(#03837f, #5f2c82);
+    }
+    
+    section#login {
+        /* Em vez de usar 100vw/vh, defina um tamanho limite para o cartão */
+        width: 900px; 
+        height: 550px; 
+    }
+    
+    section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%; /* Mude para 100% para não deixar o espaço em branco embaixo */
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+}
